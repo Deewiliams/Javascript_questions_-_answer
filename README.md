@@ -1,1 +1,1 @@
-# Javascript_questions_-_answers
+# javascript-questions-answers

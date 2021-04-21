@@ -9,8 +9,10 @@ function fizzBuzz(num){
         return "fizz";
     } else if (num % 5){
         return "buzz";
-    } else if (num % 3 && num % 5){
+    } else if (num % 3 ===0 && num % 5 ===0){
         return "FizzBuzz"
     }
 }
-console.log(fizzBuzz(3));
+console.log(fizzBuzz(3)); //expected (buzz)
+console.log(fizzBuzz(5)); //expected  (fizz)
+console.log(fizzBuzz(15)); //expected  (FizzBuzz)

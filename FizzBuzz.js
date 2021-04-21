@@ -1,16 +1,16 @@
-function fizz(num){
+/*
+Write a function that takes one number, if that number is divisible by 3 it returns "fizz",
+ if it is divisible by 5 it returns "buzz", if it divisible by both then "fizzbuzz"
 
-for (let i = 1; i <= num; i++) {
-    if (i % 3 == 0 && i % 5 == 0) {
-        console.log("FizzBuzz");
-    } else if (i % 3 == 0) {
-        console.log("Fizz");
-    } else if (i % 5 == 0) {
-        console.log("Buzz");
-    } else {
-        console.log(i);
+*/ 
+
+function fizzBuzz(num){
+    if (num % 3){
+        return "fizz";
+    } else if (num % 5){
+        return "buzz";
+    } else if (num % 3 && num % 5){
+        return "FizzBuzz"
     }
 }
-}
-console.log(fizz(40));
-console.log(fizz(20));
+console.log(fizzBuzz(3));
